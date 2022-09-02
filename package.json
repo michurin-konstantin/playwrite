@@ -1,0 +1,21 @@
+{
+  "name": "playwrite-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michurin-konstantin/playwrite-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michurin-konstantin/playwrite-test/issues"
+  },
+  "homepage": "https://github.com/michurin-konstantin/playwrite-test#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.25.1"
+  }
+}
