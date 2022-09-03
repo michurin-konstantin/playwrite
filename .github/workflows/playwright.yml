@@ -107,4 +107,4 @@ jobs:
         authToken: ${{secrets.GITHUB_TOKEN}}
         context: 'Test report'
         state: 'success'
-        target_url: michurin-konstantin.github.io/playwrite/${{ github.run_number }}
+        target_url: https://michurin-konstantin.github.io/playwrite/${{ github.run_number }}
