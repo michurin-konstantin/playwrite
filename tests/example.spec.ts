@@ -1,7 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { allure, LabelName } from "allure-playwright";
-
-
+import { allure, LabelName } from 'allure-playwright';
 
 test('homepage has Playwright in title and get started link linking to the intro page', async ({ page }) => {
   await page.goto('https://playwright.dev/');
@@ -29,7 +27,7 @@ test("basic test", async ({ page }, testInfo) => {
 
 
 
-test("basic test", async ({ page }, testInfo) => {
+test("basic test 2", async ({ page }, testInfo) => {
   allure.link({ url: "https://playwright.dev", name: "playwright-site" });
   allure.issue({
     url: "https://github.com/allure-framework/allure-js/issues/352",
@@ -38,23 +36,23 @@ test("basic test", async ({ page }, testInfo) => {
 });
 
 
-test("basic test", async ({ page }, testInfo) => {
+test("basic test 3", async ({ page }, testInfo) => {
     allure.id("Some id");
 });
 
 
-test("basic test", async ({ page }, testInfo) => {
+test("basic test 4", async ({ page }, testInfo) => {
   allure.epic("Some Epic");
 });
 
 
-test("basic test", async ({ page }, testInfo) => {
+test("basic test 5", async ({ page }, testInfo) => {
   allure.story("Some Story");
 });
 
 
 
-test("basic test", async ({ page }, testInfo) => {
+test("basic test 6", async ({ page }, testInfo) => {
   await testInfo.attach("basic-page-screen", {
     body: await page.screenshot(),
     contentType: "image/png",
@@ -69,7 +67,7 @@ export const TODO_ITEMS = [
   "book a doctors appointment",
 ];
 
-test("basic test", async ({ page }, testInfo) => {
+test("basic test 77", async ({ page }, testInfo) => {
    await testInfo.attach("TODO_ITEMS", {
       body: JSON.stringify(TODO_ITEMS),
       contentType: "application/json",
@@ -78,7 +76,7 @@ test("basic test", async ({ page }, testInfo) => {
 
 
 
-test("basic test", async ({ page }, testInfo) => {
+test("basic tes88t", async ({ page }, testInfo) => {
   await test.step("Visit todolist page", async () => {
     await page.goto("https://demo.playwright.dev/todomvc");
   });
@@ -95,55 +93,55 @@ test("basic test", async ({ page }, testInfo) => {
 });
 
 
-test.only('focus this test', async ({ page }) => {
-  // Run only focused tests in the entire project.
-});
+// test.only('focus this test', async ({ page }) => {
+//   // Run only focused tests in the entire project.
+// });
 
 
-test.skip('skip this test', async ({ page }) => {
-  // This test is not run
-});
+// test.skip('skip this test', async ({ page }) => {
+//   // This test is not run
+// });
 
 
-test('skip this test', async ({ page, browserName }) => {
-  test.skip(browserName === 'firefox', 'Still working on it');
-});
+// test('skip this test', async ({ page, browserName }) => {
+//   test.skip(browserName === 'firefox', 'Still working on it');
+// });
 
 
-test.describe('two tests', () => {
-  test('one', async ({ page }) => {
-  });
+// test.describe('two tests', () => {
+//   test('one', async ({ page }) => {
+//   });
 
-  test('two', async ({ page }) => {
+//   test('two', async ({ page }) => {
    
-  });
-});
+//   });
+// });
 
 
-test('Test login page @fast', async ({ page }) => {
-  // ...
-});
+// test('Test login page @fast', async ({ page }) => {
+//   // ...
+// });
 
-test('Test full report @slow', async ({ page }) => {
-  // ...
-});
+// test('Test full report @slow', async ({ page }) => {
+//   // ...
+// });
 
 
-test.describe('chromium only', () => {
-  test.skip(({ browserName }) => browserName !== 'chromium', 'Chromium only!');
+// test.describe('chromium only', () => {
+//   test.skip(({ browserName }) => browserName !== 'chromium', 'Chromium only!');
 
-  test.beforeAll(async () => {
-    // This hook is only run in Chromium.
-  });
+//   test.beforeAll(async () => {
+//     // This hook is only run in Chromium.
+//   });
 
-  test('test 1', async ({ page }) => {
-    // This test is only run in Chromium.
-  });
+//   test('test 1', async ({ page }) => {
+//     // This test is only run in Chromium.
+//   });
 
-  test('test 2', async ({ page }) => {
-    // This test is only run in Chromium.
-  });
-});
+//   test('test 2', async ({ page }) => {
+//     // This test is only run in Chromium.
+//   });
+// });
 
 
 const REPO = 'playwrite';
@@ -183,7 +181,6 @@ test('last created issue should be first in the list', async ({ page }) => {
   const firstIssue = page.locator(`a[data-hovercard-type='issue']`).first();
   await expect(firstIssue).toHaveText('[Feature] request 1');
 });
-
 
 
 
