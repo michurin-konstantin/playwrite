@@ -183,4 +183,13 @@ test("basic tes88t", async ({ page }, testInfo) => {
 // });
 
 
+test('example test', async ({ page }) => {
+  await page.goto('https://playwright.dev');
+  await expect(page).toHaveScreenshot();
+});
 
+
+test('example test 2', async ({ page }) => {
+  await page.goto('https://playwright.dev');
+  await expect(page).toHaveScreenshot();
+});
